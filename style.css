@@ -1,0 +1,102 @@
+h1 {
+    text-align: center;
+    color: rgb(233, 130, 27);
+    }
+    
+h3 {
+text-align: center;
+}
+
+img {  /*размеры всех картинок*/
+    width: 300px;
+    height: 400px;
+    align-items: center;
+    }
+
+
+.logo {
+    width: 100px;
+    height: 50px;
+
+}
+.menu {
+    margin: 15px;
+
+}
+
+.flexcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    border: 3px solid rgb(14, 14, 175);
+    align-items: center;
+    height: 100%;
+    z-index: 1;
+    align-content: space-around;
+       
+}
+
+.block1 {
+    flex: 2;
+    align-items: center;
+    display: grid;
+    justify-content: space-between;
+    border: 1px solid red; 
+}
+
+.block2 {
+    flex: 1;
+    align-self: flex-start;
+    flex-grow:1;
+    display: grid;
+    justify-content: space-between;
+    border: 1px solid green;
+
+    
+}
+.block3 {
+    flex: 1;
+    align-self: center;
+    flex-grow: 1;
+    display: grid;
+    justify-content: space-between;
+    border: 1px solid yellow;
+}
+
+.container  {
+    align-self: flex-start;
+    flex-grow: 1;
+    margin: 20px;
+    justify-content: space-between;
+    
+}
+
+/*.[for^="block"] попытка обратиться к блокам, как в игре с тарелками, не получилось
+
+
+{
+    flex-basis: ;  
+    margin: 20px;  */
+
+
+
+button{  /*эффекты кнопки*/
+    border: none;
+    border-radius: 12px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: overline;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    background-color: rgb(246, 240, 59);
+    }
+
+
+.scale {
+    transition: 1s; /* Время эффекта */
+}
+.scale:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+}
